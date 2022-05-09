@@ -1,0 +1,168 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body, h1, h2, div, p{
+    margin: 0;
+    text-align: center;
+    color: whitesmoke;
+}
+
+input{
+    border: none;
+    height: 35px;
+    font-size: large;
+}
+
+.soft-edges{
+    border-radius: 10px;
+}
+
+.lightGreen-color{
+    background-color: rgb(0, 128, 0, 0.2);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    padding: 10px;
+}
+
+.header-firstSection{
+    height: 60px;
+}
+
+.menu-logo{
+    color: darkolivegreen;
+    width: 6rem;
+}
+
+nav{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav > a{
+    padding: 10px 0;
+    margin-top: 5px;
+    text-align: center;
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    font-size: larger;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    background-color: rgb(222, 184, 135, 0.2);
+    border: 3px solid darkolivegreen;
+    color: darkolivegreen; 
+}
+
+.heading{
+    background-color: darkolivegreen;
+}
+
+section{
+    width: 92%;
+    padding: 4%;
+    background-image: linear-gradient(to bottom, darkolivegreen, rgb(85, 107, 47, .5));
+    margin: auto;
+}
+
+.project{
+    margin-top: 1rem;
+}
+
+.project > img{
+    width: 92%;
+    height: 40vh;
+    transition: transform .4s ease-in;
+}
+
+.project > img:hover{
+    transform: scale(1.01, 1.03) translate(0, 15px);
+}
+
+.desc{
+    width: 92%;
+}
+
+.desc > *{
+    padding: 10px;
+}
+
+#team{
+    background-image: linear-gradient(to bottom, darkolivegreen, rgb(85, 107, 47, .5));
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 165px 165px;
+    gap: 27px;
+}
+
+.member > .img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    background-size: 100% 100%;
+}
+
+.member .name{
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 44%;
+    background-color: rgb(169, 169, 169, .6);
+    color: white;
+    text-align: center;
+}
+
+#elon-musk{
+    background-image: url("./resources/Team_Images/elon-musk.jpg");
+}
+#gary-vee{
+    background-image: url("./resources/Team_Images/gary-vee.jpg");
+}
+#lebron-james{
+    background-image: url("./resources/Team_Images/lebron-james.jpg");
+}
+#lisa-fischer{
+    background-image: url("./resources/Team_Images/lisa-fischer.webp");
+}
+#omar-carlsen{
+    background-image: url("./resources/Team_Images/omar-carlsen.webp");
+}
+#alex-lasker{
+    background-image: url("./resources/Team_Images/alex-lasker.webp");
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    width: 92%;
+    padding: 4%;
+    margin: auto;
+}
+
+footer > a{
+    color: darkolivegreen;
+    font-size: large;
+}
+
+@media screen and (min-width: 768px) {
+    #projects{
+        display: flex;
+    }
+
+    #team{
+        grid-template-columns: repeat(3, 30%);
+        gap: 3.3%;
+    }
+}
